@@ -69,7 +69,7 @@ gnome-extensions enable timed-do-not-disturb@andbal
 
 ## Check out this one too :)
 
-https://github.com/Andbal23/dynamic-music-pill
+https://github.com/Andbal23/dynamic-music-pill <br>
 https://github.com/Andbal23/extension-profiles
 
 ---
@@ -87,7 +87,7 @@ https://github.com/Andbal23/extension-profiles
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Andbal23/dnd-timer&type=Date)](https://star-history.com/#Andbal23/timed-do-not-disturb&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Andbal23/timed-do-not-disturb&type=Date)](https://star-history.com/#Andbal23/timed-do-not-disturb&Date)
 
 ---
 

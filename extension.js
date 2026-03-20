@@ -4,7 +4,6 @@ import GObject from 'gi://GObject';
 import St from 'gi://St';
 import Clutter from 'gi://Clutter';
 
-// Importáljuk a hivatalos gettext modult "_" néven
 import { Extension, gettext as _ } from 'resource:///org/gnome/shell/extensions/extension.js';
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 import { QuickMenuToggle } from 'resource:///org/gnome/shell/ui/quickSettings.js';
@@ -31,7 +30,6 @@ class DndTimerToggle extends QuickMenuToggle {
     }
 
     _buildMenu() {
-        // Rövidített, "app-szerű" szövegek
         const presets = [
             { label: _('15m'), mins: 15 },
             { label: _('30m'), mins: 30 },
@@ -41,7 +39,6 @@ class DndTimerToggle extends QuickMenuToggle {
             { label: _('8h'), mins: 480 }
         ];
 
-        // 1. Grid gombok felépítése (Modern design)
         const gridItem = new PopupMenu.PopupBaseMenuItem({ reactive: false });
         gridItem.set_style('padding: 8px 12px;'); 
 
@@ -51,7 +48,6 @@ class DndTimerToggle extends QuickMenuToggle {
             style_class: 'dnd-preset-grid'
         });
 
-        // 2 sor (egyenként 3-3 gombbal)
         const row1 = new St.BoxLayout({ vertical: false, x_expand: true, style_class: 'dnd-preset-row' });
         const row2 = new St.BoxLayout({ vertical: false, x_expand: true, style_class: 'dnd-preset-row' });
 
@@ -61,7 +57,7 @@ class DndTimerToggle extends QuickMenuToggle {
                 label: preset.label,
                 style_class: 'dnd-preset-btn',
                 x_expand: true,
-                x_align: Clutter.ActorAlign.FILL, // Széthúzza a gombokat egyenletesen
+                x_align: Clutter.ActorAlign.FILL,
                 can_focus: true
             });
             
@@ -84,7 +80,6 @@ class DndTimerToggle extends QuickMenuToggle {
 
         this.menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
 
-        // 2. Egyéni idő megadása (Custom Row) egy pofás ikonnal
         const customItem = new PopupMenu.PopupBaseMenuItem({ reactive: false });
         customItem.set_style('padding: 8px 12px;');
 
@@ -94,7 +89,6 @@ class DndTimerToggle extends QuickMenuToggle {
             x_expand: true 
         });
 
-        // Harang/Ébresztő ikon a beviteli mező előtt
         const clockIcon = new St.Icon({
             icon_name: 'alarm-symbolic',
             style_class: 'popup-menu-icon',
@@ -178,7 +172,6 @@ export default class DndTimerExtension extends Extension {
         const qsMenu = Main.panel.statusArea.quickSettings.menu;
         this._originalToggle = null;
         
-        // 1. Megkeressük a gyári DND gombot
         for (const child of qsMenu._grid.get_children()) {
             if (child.constructor.name === 'DoNotDisturbToggle') {
                 this._originalToggle = child;
@@ -186,7 +179,6 @@ export default class DndTimerExtension extends Extension {
             }
         }
 
-        // 2. Kimentjük róla a rendszer nyelvén futó szöveget ("Ne zavarjanak")
         const originalTitle = this._originalToggle ? this._originalToggle.title : _('Do Not Disturb');
 
         this._toggle = new DndTimerToggle(this, originalTitle);
@@ -194,10 +186,8 @@ export default class DndTimerExtension extends Extension {
         if (this._originalToggle) {
             this._originalToggle.hide();
             
-            // 3. Az addItem() elengedhetetlen! Ez regisztrálja a lenyíló menüt a GNOME "színpadán"
             qsMenu.addItem(this._toggle);
             
-            // 4. Utána elegánsan visszamozgatjuk a gombot a gyári gomb helyére a hálóban
             qsMenu._grid.set_child_below_sibling(this._toggle, this._originalToggle);
         } else {
             qsMenu.addItem(this._toggle);

@@ -1,0 +1,8 @@
+{
+    "uuid": "dnd-timer@andbal",
+    "name": "Timed Do Not Disturb",
+    "description": "Adds a timer menu to the Do Not Disturb quick toggle, allowing you to mute notifications for a specific time.",
+    "shell-version": ["45", "46", "47", "48", "49", "50"],
+    "url": "https://github.com/Andbal23/dnd-timer",
+    "gettext-domain": "dnd-timer"
+}

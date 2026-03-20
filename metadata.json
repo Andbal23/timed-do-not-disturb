@@ -1,5 +1,5 @@
 {
-  "uuid": "dnd-timer@andbal",
+  "uuid": "timed-do-not-disturb@andbal",
   "name": "Timed Do Not Disturb",
   "description": "Adds a timer menu to the Do Not Disturb quick toggle, allowing you to mute notifications for a specific time.",
   "shell-version": [

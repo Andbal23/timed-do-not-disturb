@@ -26,10 +26,10 @@ A GNOME Shell extension that supercharges the built-in Do Not Disturb toggle wit
 
 ## Installation
 
-### From GNOME Extensions Store (Recommended)
+### From GNOME Extensions Store (Recommended) (Coming Soon...)
 
 <p align="center">
-  <a href="https://extensions.gnome.org/extension/TODO/timed-do-not-disturb/">
+  <a href="https://extensions.gnome.org/extension/9550/timed-do-not-disturb//">
     <img alt="Get it on GNOME Extensions" width="400" src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true"/>
   </a>
 </p>

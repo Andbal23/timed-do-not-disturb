@@ -1,54 +1,6 @@
-.dnd-timer-custom-box {
-    padding: 0px;
-    spacing: 8px;
-}
-
-.dnd-preset-grid {
-    spacing: 8px;
-    margin-bottom: 4px;
-    margin-top: 4px;
-}
-
-.dnd-preset-row {
-    spacing: 8px;
-}
-
-.dnd-preset-btn {
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.08);
-    padding: 8px 0px;
-    font-weight: bold;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    min-width: 75px;
-}
-
-.dnd-preset-btn:hover, .dnd-preset-btn:focus {
-    background-color: rgba(255, 255, 255, 0.15);
-}
-
-.dnd-preset-btn:active {
-    background-color: rgba(255, 255, 255, 0.25);
-}
-
-.dnd-timer-entry {
-    border-radius: 8px;
-    padding: 6px 10px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.dnd-timer-start-btn {
-    padding: 6px 16px;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.15);
-    font-weight: bold;
-}
-
-.dnd-timer-start-btn:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-}
-
-.dnd-timer-start-btn:active {
-    background-color: rgba(255, 255, 255, 0.35);
-}
+/* Timed Do Not Disturb — stylesheet.css
+ *
+ * All menu styling is inherited from the GNOME Shell theme's built-in
+ * .quick-toggle-menu, .popup-menu-item, etc. classes.
+ * No custom overrides needed for the native look.
+ */

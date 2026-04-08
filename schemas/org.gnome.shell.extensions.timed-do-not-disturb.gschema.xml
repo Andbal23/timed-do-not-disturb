@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.timed-do-not-disturb"
+          path="/org/gnome/shell/extensions/timed-do-not-disturb/">
+
+    <key name="show-end-notification" type="b">
+      <default>true</default>
+      <summary>Show notification when timer ends</summary>
+      <description>Display a notification when the Do Not Disturb timer expires and notifications are re-enabled.</description>
+    </key>
+
+    <key name="show-timer-subtitle" type="b">
+      <default>true</default>
+      <summary>Show timer in subtitle</summary>
+      <description>Show the timer end time in the quick toggle subtitle when DND is active with a timer.</description>
+    </key>
+
+    <key name="remember-state" type="b">
+      <default>false</default>
+      <summary>Remember state</summary>
+      <description>Remember the DND state across sessions and reboots. If DND was on when you logged out, it will be re-enabled on next login.</description>
+    </key>
+
+    <key name="show-toggle-notification" type="b">
+      <default>false</default>
+      <summary>Show notifications on toggle</summary>
+      <description>Show a notification when Do Not Disturb is manually enabled or disabled.</description>
+    </key>
+
+    <key name="timer-durations" type="ai">
+      <default>[15, 30, 60, 120, 240, 480]</default>
+      <summary>Timer preset durations</summary>
+      <description>List of timer durations in minutes shown in the dropdown menu. Set a value to 0 to hide that slot.</description>
+    </key>
+
+  </schema>
+</schemalist>

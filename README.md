@@ -56,11 +56,16 @@ mkdir -p ~/.local/share/gnome-shell/extensions/timed-do-not-disturb@andbal
 cp -r * ~/.local/share/gnome-shell/extensions/timed-do-not-disturb@andbal/
 ```
 
-**5.** Restart GNOME Shell:
+**5.** Compile glib schemas:
+```bash
+glib-compile-schemas ~/.local/share/gnome-shell/extensions/timed-do-not-disturb@andbal/schemas
+```
+
+**6.** Restart GNOME Shell:
 - **X11:** Press `Alt+F2`, type `r`, and press `Enter`.
 - **Wayland:** Log out and log back in.
 
-**6.** Enable the extension via **GNOME Extensions**, **Extension Manager**, or:
+**7.** Enable the extension via **GNOME Extensions**, **Extension Manager**, or:
 ```bash
 gnome-extensions enable timed-do-not-disturb@andbal
 ```

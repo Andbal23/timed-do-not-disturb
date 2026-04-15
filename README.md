@@ -2,10 +2,11 @@
 
 A GNOME Shell extension that supercharges the built-in Do Not Disturb toggle with a timer menu — mute notifications for a set duration and let them come back automatically.
 
----
 
-![Views](https://komarev.com/ghpvc/?username=Andbal23d&repo=timed-do-not-disturb&label=Views&color=green) ![GNOME Shell](https://img.shields.io/badge/GNOME-45%20--%2050-blue?logo=gnome&logoColor=white) ![GitHub License](https://img.shields.io/github/license/Andbal23/timed-do-not-disturb)
+
+  ![Views](https://komarev.com/ghpvc/?username=Andbal23d&repo=timed-do-not-disturb&label=Views&color=green) ![GNOME Shell](https://img.shields.io/badge/GNOME-45%20--%2050-blue?logo=gnome&logoColor=white) ![GitHub License](https://img.shields.io/github/license/Andbal23/timed-do-not-disturb)
 [![Stars](https://img.shields.io/github/stars/Andbal23/timed-do-not-disturb?style=social)](https://github.com/Andbal23/timed-do-not-disturb/stargazers)
+
 
 ---
 
@@ -21,8 +22,15 @@ A GNOME Shell extension that supercharges the built-in Do Not Disturb toggle wit
 ## Quick Settings Menu
 
 
-<p align="center"><img width="521" height="772" alt="image" src="https://github.com/user-attachments/assets/72c79457-6677-4e30-b7af-03a107914ff1" />
-</p>
+<p align="center"><img width="410" height="828" alt="Képernyőkép 2026-04-15 20-35-33" src="https://github.com/user-attachments/assets/73ddb946-259f-438e-95a8-9f3757fe0565" /></p>
+<p align="center"><img width="411" height="492" alt="Képernyőkép 2026-04-15 20-35-42" src="https://github.com/user-attachments/assets/4dcf7bf9-fbd3-43e1-8853-d409033f0044" /></p>
+
+## Settings
+
+<p align="center"><img width="690" height="626" alt="Képernyőkép 2026-04-15 20-37-23" src="https://github.com/user-attachments/assets/375bc777-f8ba-45e5-9167-e8291a9f4abc" /></p>
+<p align="center"><img width="690" height="626" alt="Képernyőkép 2026-04-15 20-37-26" src="https://github.com/user-attachments/assets/febc98e5-7730-4d72-b6da-7646cee89827" /></p>
+<p align="center"><img width="690" height="626" alt="Képernyőkép 2026-04-15 20-37-28" src="https://github.com/user-attachments/assets/e9159587-f577-4994-aaa8-8cb91ad94f6a" /></p>
+
 
 ## Installation
 
